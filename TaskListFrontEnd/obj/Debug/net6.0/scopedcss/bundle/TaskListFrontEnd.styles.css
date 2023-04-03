@@ -1,0 +1,418 @@
+/* _content/TaskListFrontEnd/Components/AddButton.razor.rz.scp.css */
+.image-button[b-vv9vo236n1] {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    margin-top: 7px;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 24px;
+    margin-left: 6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    line-height: 14px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.05em;
+    gap: 12px;
+}
+
+.image-container[b-vv9vo236n1] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    padding-left: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+.image[b-vv9vo236n1] {
+    width: 20px;
+    height: 20px;
+    visibility: visible;
+}
+/* _content/TaskListFrontEnd/Components/Avatar.razor.rz.scp.css */
+.avatar[b-bv3mxh9l3g] {
+   border-radius:100px;
+    margin-top: 7px;
+    width:24px;
+    height:24px;
+}
+.avatar:focus[b-bv3mxh9l3g] {
+  outline: none;
+}
+/* _content/TaskListFrontEnd/Components/CancelButton.razor.rz.scp.css */
+.image-button[b-3co3qtvdse] {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 24px;
+    width: 95px;
+    height: 40px;
+    background: #EAF0F5;
+    color:black;
+    border-radius: 4px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.05em;
+    gap: 12px;
+}
+
+.image-button:hover[b-3co3qtvdse] {
+        background-color: white;
+    }
+/* _content/TaskListFrontEnd/Components/DateButton.razor.rz.scp.css */
+.image-button[b-p6dvql6nps] {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+    padding: 8px 24px 8px 16px;
+    margin: 10px;
+    width: 111px;
+    height: 40px;
+    background: white;
+    opacity: 0.5;
+    border-radius: 4px;
+    border: solid;
+    border-width:1px;
+    border-color:#ded5d5;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.05em;
+    gap: 12px;
+}
+
+.image-button:hover[b-p6dvql6nps] {
+    background-color:lightgray;
+}
+.image-container[b-p6dvql6nps] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    padding-left: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+.image[b-p6dvql6nps] {
+    width: 20px;
+    height: 20px;
+    visibility:visible;
+}
+/* _content/TaskListFrontEnd/Components/Input.razor.rz.scp.css */
+.PlaceHolder[b-x82vd7utaq] {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8A94A6;
+}
+/* _content/TaskListFrontEnd/Components/LargerButton.razor.rz.scp.css */
+.image-button[b-14hzk4t83v] {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+    padding: 8px 24px 8px 16px;
+    margin: 10px;
+    width: 140px;
+    height: 40px;
+    background: white;
+    opacity: 0.5;
+    border-radius: 4px;
+    border: solid;
+    border-width:1px;
+    border-color:#ded5d5;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.05em;
+    gap: 12px;
+}
+
+.image-button:hover[b-14hzk4t83v] {
+    background-color:lightgray;
+}
+    .image-container[b-14hzk4t83v] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    padding-left: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+.image[b-14hzk4t83v] {
+    width: 20px;
+    height: 20px;
+    visibility:visible;
+}
+/* _content/TaskListFrontEnd/Components/OkButton.razor.rz.scp.css */
+.ok-button[b-qxeewwq0tb] {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 24px;
+    margin-left:6px;
+    width: 95px;
+    height: 40px;
+    background: #0D55CF;
+    border-radius: 4px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color:white;
+    line-height: 14px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.05em;
+    gap: 12px;
+}
+
+    .ok-button:hover[b-qxeewwq0tb] {
+        background-color: #2b66ca;
+    }
+
+/* _content/TaskListFrontEnd/Components/OpenButton.razor.rz.scp.css */
+.image-button[b-z07u9ii8fh] {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+    padding: 8px 24px 8px 16px;
+    margin: 10px;
+    width: 111px;
+    height: 40px;
+    background: #EAF0F5;
+    opacity: 0.5;
+    border-radius: 4px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.05em;
+    gap: 12px;
+}
+
+    .image-button:hover[b-z07u9ii8fh] {
+        background-color: white;
+    }
+
+.image-container[b-z07u9ii8fh] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    padding-left: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+.image[b-z07u9ii8fh] {
+    width: 20px;
+    height: 20px;
+    visibility: visible;
+}
+/* _content/TaskListFrontEnd/Components/TaskInput.razor.rz.scp.css */
+.input-task[b-ewnj5g41sm] {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border:none;
+    margin-top: 7px;
+    width:400px;
+}
+
+.input-task:focus[b-ewnj5g41sm]{
+    outline:none;
+}
+/* _content/TaskListFrontEnd/Shared/MainLayout.razor.rz.scp.css */
+.page[b-4q7cz64gp5] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-4q7cz64gp5] {
+    flex: 1;
+}
+
+.sidebar[b-4q7cz64gp5] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-4q7cz64gp5] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-4q7cz64gp5]  a, .top-row .btn-link[b-4q7cz64gp5] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-4q7cz64gp5] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-4q7cz64gp5] {
+        display: none;
+    }
+
+    .top-row.auth[b-4q7cz64gp5] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-4q7cz64gp5], .top-row .btn-link[b-4q7cz64gp5] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-4q7cz64gp5] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-4q7cz64gp5] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-4q7cz64gp5] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-4q7cz64gp5], article[b-4q7cz64gp5] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/TaskListFrontEnd/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-zufdnmg7nd] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-zufdnmg7nd] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-zufdnmg7nd] {
+    font-size: 1.1rem;
+}
+
+.oi[b-zufdnmg7nd] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-zufdnmg7nd] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-zufdnmg7nd] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-zufdnmg7nd] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-zufdnmg7nd]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-zufdnmg7nd]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-zufdnmg7nd]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-zufdnmg7nd] {
+        display: none;
+    }
+
+    .collapse[b-zufdnmg7nd] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}

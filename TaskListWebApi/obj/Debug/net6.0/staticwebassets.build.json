@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "JgyLAR15UEE9naSchk9YTOswDxRW8JI70KImW2YArZU=",
+  "Source": "TaskListWebApi",
+  "BasePath": "_content/TaskListWebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b418ca6d-6e2a-4d97-b450-908ac10442dc": {
+      "ProjectGuid": "b418ca6d-6e2a-4d97-b450-908ac10442dc",
+      "DisplayName": "TaskListWebApi",
+      "ColorIndex": 0
+    },
+    "34e0c43c-128b-4c90-895b-905fd77b440d": {
+      "ProjectGuid": "34e0c43c-128b-4c90-895b-905fd77b440d",
+      "DisplayName": "TaskListTests",
+      "ColorIndex": 1
+    },
+    "dff65096-eeaf-4828-b5fb-0f223fbcf234": {
+      "ProjectGuid": "dff65096-eeaf-4828-b5fb-0f223fbcf234",
+      "DisplayName": "TaskListTests",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "0ca9a500-bf47-4c59-9b45-a1d768f42f74": {
+      "ProjectGuid": "0ca9a500-bf47-4c59-9b45-a1d768f42f74",
+      "DisplayName": "TaskListFrontEnd",
+      "ColorIndex": 3
+    },
+    "f31b29e6-5052-4aaa-88f2-c69d3a9651da": {
+      "ProjectGuid": "f31b29e6-5052-4aaa-88f2-c69d3a9651da",
+      "DisplayName": "TaskListWebApi",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

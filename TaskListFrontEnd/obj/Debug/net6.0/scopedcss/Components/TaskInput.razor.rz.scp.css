@@ -1,0 +1,14 @@
+.input-task[b-ewnj5g41sm] {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border:none;
+    margin-top: 7px;
+    width:400px;
+}
+
+.input-task:focus[b-ewnj5g41sm]{
+    outline:none;
+}
