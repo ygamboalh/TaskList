@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Resources\Images\alert-circle.svg" />
+    <None Include="wwwroot\Resources\Images\avatar.png" />
+    <None Include="wwwroot\Resources\Images\calendar.svg" />
+    <None Include="wwwroot\Resources\Images\feather-icon.png" />
+    <None Include="wwwroot\Resources\Images\plus-square.svg" />
+    <None Include="wwwroot\Resources\Images\sun.svg" />
+    <None Include="wwwroot\Resources\Images\unlock.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TaskListTests\TaskListTests.csproj" />
+    <ProjectReference Include="..\TaskListWebApi\TaskListWebApi.csproj" />
+  </ItemGroup>
+
+</Project>

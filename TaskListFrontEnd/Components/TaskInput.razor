@@ -1,0 +1,20 @@
+﻿@using TaskListWebApi.Models
+<EditForm Model="taskList">
+    <DataAnnotationsValidator />
+    <div class="form-group">
+        <input placeholder="Type to add new task" type="text" class="input-task" id="@InputId" @bind="@InputValue" />
+    </div>
+</EditForm>
+
+@code {
+    [Parameter] public string LabelText { get; set; }
+    [Parameter] public string InputId { get; set; }
+    [Parameter] public string InputValue { get; set; }
+
+    public TaskList taskList = new TaskList();
+
+    public void Prueba ()
+    {
+        taskList.Description = InputValue;
+    }
+}

@@ -1,0 +1,20 @@
+﻿@using Microsoft.Extensions.Logging
+@using TaskListWebApi.Models
+<EditForm Model=@taskList>
+    <InputText @bind-Value="texto"></InputText>
+    <span>@texto</span>
+</EditForm>
+
+@code {
+    public TaskList taskList= new();
+    
+    [Parameter]
+    public string texto { get; set; }
+    
+    public void HandleSubmit()
+    {
+        texto = "Nuevo texto";
+
+        // Process the form
+    }
+}

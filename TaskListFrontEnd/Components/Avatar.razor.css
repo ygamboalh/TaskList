@@ -1,0 +1,9 @@
+﻿.avatar {
+   border-radius:100px;
+    margin-top: 7px;
+    width:24px;
+    height:24px;
+}
+.avatar:focus {
+  outline: none;
+}

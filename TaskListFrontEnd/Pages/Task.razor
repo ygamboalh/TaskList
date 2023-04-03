@@ -1,0 +1,199 @@
+﻿@page "/task"
+@inject IJSRuntime jsRuntime
+@using System.Text
+@using System.Text.Json
+@using System.Drawing
+@using TaskListFrontEnd.Helpers
+@using TaskListWebApi.Data
+@using TaskListWebApi.Dtos
+@using TaskListWebApi.Models
+@using TaskListFrontEnd.Components
+@using TaskListWebApi.Helpers
+@using TaskListWebApi.Data.Interfaces
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Components
+
+<EditForm Model="taskList">
+    
+<div class="container-fluid up-div">
+  <div class="row">
+    <div class="col-sm-6" style="padding-left:0">
+      <div class="d-flex content-start">
+          <button @onclick="ToggleDivVisibility" class="plus-button">
+            <span class="plus-container">
+                <img class="plus-image" src=/Resources/Images/plus-square.svg />
+            </span>
+          </button>
+          <div class="form-group">
+              <input type="text" id="inputTexto" autocomplete="off" placeholder="Type to add new task" maxlength=80 class="input-task" @bind="@InputValue"/>
+          </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="d-flex justify-content-end">
+        <div class="col-sm-4" style="display: flex;justify-content:end;width:50%">
+            <div style="">
+               <Avatar Disabled=true/>
+            </div>  
+        </div>
+      </div>
+    </div>
+    <div>
+        @if(stringBefore.Count()>0)
+                    {
+                    <div class="" style="margin-left:4px;margin-bottom:4px; margin-top:4px">
+                            <div class="row">
+                                <div class="" style="width:40px">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </div>
+                                <div class="col" style="margin-left:0px;padding-left:3px">
+                                    <div class="d-flex justify-content-start" style="height:fit-content; width:fit-content">
+                                        @foreach (var item in stringBefore)
+                                        {
+                                            switch (@GetHelper.FinalCheck(item))
+                                            {
+                                                case "HasHashtag":
+                                                    <label id="HasHashtag" class="HasHashtag">
+                                                         <span class="image-container-HasHashtag">
+                                                            <img class="image-HasHashtag"/>
+                                                         </span> 
+                                                         <span>
+                                                            important
+                                                         </span>
+                                                    </label>
+                                                    continue;
+                                                case "HasAt":
+                                                    <label id="HasAt" class="HasAt">
+                                                        <span class="image-container-HasAt">
+                                                            <img class="image-HasAt"/>
+                                                        </span> 
+                                                        <span>
+                                                            @GetHelper.SplitChar(item)
+                                                        </span>
+                                                    </label>
+                                                    continue;
+                                                case "IsValidEmail":
+                                                    <label id="IsValidEmail" class="IsValidEmail">
+                                                        <span class="image-container-Email">
+                                                            <img class="image-Email"/>
+                                                        </span> 
+                                                        <span>
+                                                            Mail    
+                                                        </span>
+                                                    </label>
+                                                    continue;
+                                                case "IsValidUrl":
+                                                    <label id="IsValidUrl" class="IsValidUrl">
+                                                        <span class="image-container-Link">
+                                                            <img class="image-Link"/>
+                                                        </span> 
+                                                        <span>
+                                                            Link    
+                                                        </span>
+                                                    </label>
+                                                    continue;
+                                                case "JustText":
+                                                    <label id="JustText" class="JustText">@item</label>
+                                                    
+                                                    continue;
+                                            }
+                                        }   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+    </div>
+  </div>
+</div>
+<div class="container-fluid down-div" Id="divH" style="display:none">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="d-flex" style="justify-content-start">
+        <button disabled class="image-button-open" >
+            <span class="image-container-open">
+                <img class="image-open" src="/Resources/Images/feather-icon.png"/>
+            </span>
+            <span class="none-display">Open</span>
+        </button>
+        <button disabled class="image-button-date" >
+            <span class="image-container-date">
+                <img class="image-date" src="/Resources/Images/calendar.svg"/>
+            </span>
+            <span class="none-display">Date</span>
+        </button>
+        <button disabled class="image-button-date" >
+            <span class="image-container-date">
+                <img class="image-date" src="/Resources/Images/unlock.svg"/>
+            </span>
+            <span class="none-display">Public</span>
+        </button>
+        <button disabled class="image-button-large" >
+            <span class="image-container-large">
+                <img class="image-large" src="/Resources/Images/sun.svg"/>
+            </span>
+            <span class="none-display">Highlight</span>
+        </button>
+        <button disabled class="image-button-large" >
+            <span class="image-container-large">
+                <img class="image-large" src="/Resources/Images/alert-circle.svg"/>
+            </span>
+            <span class="none-display">Estimation</span>
+        </button>
+        
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="d-flex justify-content-end">
+        <button onclick="@CancelValue" class="cancel-button none-display">
+            <span>Cancel</span>
+        </button>
+            <button id="buttonOK" onclick="@ValidateValue" class="ok-button none-display-button">
+               <span class="none-display">OK</span>
+            </button>   
+                </div>
+    </div>
+  </div>
+</div>
+</EditForm>
+<br>
+<span>Type a text and press OK to see the effect:</span>
+<h5>#important notice @@john via mail@mail.com and https://www.google.com</h5>
+@code 
+{
+    [Parameter] public Helper GetHelper { get; set; }
+    [Parameter] public string InputValue { get; set; }
+    public List<string> stringBefore = new List<string>();
+    public TaskList taskList = new TaskList();
+    private IJSObjectReference module;
+
+    private void ValidateValue()
+    {   
+        try
+        {
+            GetHelper = new Helper();
+            stringBefore = GetHelper.SplitString(InputValue);
+        }
+        catch(Exception e)
+        {
+            return;
+        }
+    }
+    private void CancelValue()
+    {
+        stringBefore.Clear();
+        ToggleDivVisibility();
+        InputValue = "";
+    }
+
+    async void ToggleDivVisibility()
+    {
+        module = await jsRuntime.InvokeAsync<IJSObjectReference>("import", "./scripts.js");
+        await module.InvokeVoidAsync("Toggle","divH");
+    }
+
+   
+
+}
