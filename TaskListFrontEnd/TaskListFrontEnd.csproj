@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TaskListTests\TaskListTests.csproj" />
     <ProjectReference Include="..\TaskListWebApi\TaskListWebApi.csproj" />
   </ItemGroup>
 

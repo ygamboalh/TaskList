@@ -49,27 +49,6 @@ namespace TaskListWebApi.Helpers
             return wordsList;
         }
 
-        public List<string> DeteleCh(List<string> list)
-        {
-            char[] ch = new char[] { '!', '?', '¿', '¡', ' ', ',', '.', ';', '\t' };
-            List<string> result = new List<string>();
-            foreach (string word in list)
-            {
-                string newWord = "";
-                foreach (char c in word)
-                {
-                    if (!ch.Contains(c))
-                    {
-                        newWord += c;
-                    }
-                }
-                result.Add(newWord);
-            }
-            return result;
-        }
-
-
-
         public string FinalCheck(string text)
         {
             if (this.IsValidEmail(text))
@@ -93,7 +72,5 @@ namespace TaskListWebApi.Helpers
                 return "JustText";
             }
         }
-
-        
     }
 }
