@@ -30,7 +30,12 @@
       "ProjectGuid": "f31b29e6-5052-4aaa-88f2-c69d3a9651da",
       "DisplayName": "TaskListWebApi",
       "ColorIndex": 4
+    },
+    "774c2795-892f-4dc9-ad94-362fd229b244": {
+      "ProjectGuid": "774c2795-892f-4dc9-ad94-362fd229b244",
+      "DisplayName": "TaskList.Tests",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 6
 }

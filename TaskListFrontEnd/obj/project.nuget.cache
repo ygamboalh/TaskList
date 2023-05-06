@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "irylwo1aJF0kLSDTT5Ffy1GKiDrl4GmqPScxzyOWAL6jqHimiMfpL3SKIIjy44uForfgFRhJsDHFuDe6m4vhag==",
+  "dgSpecHash": "sGnGKUvJWvMC5bnmJlwfR0fOZ/xOyCMv7Jct7LlojhxJnpvLfaa48gNuSAHlsiE29fZyMQs62+eoCwLCSxVjxQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Yordan Gamboa Laina\\Desktop\\Proyectos\\TaskList\\TaskListFrontEnd\\TaskListFrontEnd.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "C:\\Users\\Yordan Gamboa Laina\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\Yordan Gamboa Laina\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Yordan Gamboa Laina\\.nuget\\packages\\moq\\4.18.4\\moq.4.18.4.nupkg.sha512",
+    "C:\\Users\\Yordan Gamboa Laina\\.nuget\\packages\\reportgenerator\\5.1.20\\reportgenerator.5.1.20.nupkg.sha512",
     "C:\\Users\\Yordan Gamboa Laina\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.4\\sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
     "C:\\Users\\Yordan Gamboa Laina\\.nuget\\packages\\sqlitepclraw.core\\2.1.4\\sqlitepclraw.core.2.1.4.nupkg.sha512",
     "C:\\Users\\Yordan Gamboa Laina\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.4\\sqlitepclraw.lib.e_sqlite3.2.1.4.nupkg.sha512",

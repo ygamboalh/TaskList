@@ -16,24 +16,6 @@ namespace TaskListWebApi.Data
         {
             _dataContext.Add(entity);
         }
-
-        public void Delete<T>(T entity) where T : class
-        {
-            _dataContext.Remove(entity);
-        }
-
-        public async Task<TaskList> GetTaskListById(int id)
-        {
-            var taskList = await _dataContext.TaskLists.FirstOrDefaultAsync(t => t.Id == id);
-            return taskList;
-        }
-
-        public async Task<IEnumerable<TaskList>> GetTaskListsAsync()
-        {
-            var taskList = await _dataContext.TaskLists.ToListAsync();
-            return (IEnumerable<TaskList>)taskList;
-        }
-
         public async Task<bool> SaveAll()
         {
             return await _dataContext.SaveChangesAsync()>0;

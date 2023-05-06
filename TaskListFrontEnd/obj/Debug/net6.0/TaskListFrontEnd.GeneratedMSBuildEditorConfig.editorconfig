@@ -19,57 +19,13 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Yordan Gamboa Laina/Desktop/Proyectos/TaskList/TaskListFrontEnd/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Yordan Gamboa Laina/Desktop/Proyectos/TaskList/TaskListFrontEnd/Pages/Task.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFzay5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yordan Gamboa Laina/Desktop/Proyectos/TaskList/TaskListFrontEnd/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Yordan Gamboa Laina/Desktop/Proyectos/TaskList/TaskListFrontEnd/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yordan Gamboa Laina/Desktop/Proyectos/TaskList/TaskListFrontEnd/Components/AddButton.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBZGRCdXR0b24ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-vv9vo236n1
-
-[C:/Users/Yordan Gamboa Laina/Desktop/Proyectos/TaskList/TaskListFrontEnd/Components/Avatar.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBdmF0YXIucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-bv3mxh9l3g
-
-[C:/Users/Yordan Gamboa Laina/Desktop/Proyectos/TaskList/TaskListFrontEnd/Components/CancelButton.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYW5jZWxCdXR0b24ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-3co3qtvdse
-
-[C:/Users/Yordan Gamboa Laina/Desktop/Proyectos/TaskList/TaskListFrontEnd/Components/DateButton.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEYXRlQnV0dG9uLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-p6dvql6nps
-
-[C:/Users/Yordan Gamboa Laina/Desktop/Proyectos/TaskList/TaskListFrontEnd/Components/Input.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJbnB1dC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-x82vd7utaq
-
-[C:/Users/Yordan Gamboa Laina/Desktop/Proyectos/TaskList/TaskListFrontEnd/Components/LargerButton.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXJnZXJCdXR0b24ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-14hzk4t83v
-
-[C:/Users/Yordan Gamboa Laina/Desktop/Proyectos/TaskList/TaskListFrontEnd/Components/OkButton.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xPa0J1dHRvbi5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-qxeewwq0tb
-
-[C:/Users/Yordan Gamboa Laina/Desktop/Proyectos/TaskList/TaskListFrontEnd/Components/OpenButton.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xPcGVuQnV0dG9uLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-z07u9ii8fh
-
-[C:/Users/Yordan Gamboa Laina/Desktop/Proyectos/TaskList/TaskListFrontEnd/Components/TaskInput.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYXNrSW5wdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-ewnj5g41sm
 
 [C:/Users/Yordan Gamboa Laina/Desktop/Proyectos/TaskList/TaskListFrontEnd/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

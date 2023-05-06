@@ -1,13 +1,13 @@
-﻿@page "/task"
+﻿@page "/"
 @inject IJSRuntime jsRuntime
 @using System.Text
 @using System.Text.Json
 @using System.Drawing
 @using TaskListFrontEnd.Helpers
-@using TaskListFrontEnd.Components
 @using Microsoft.AspNetCore.Components
 @using TaskListWebApi.Helpers
 @using TaskListWebApi.Models
+@inject HttpClient httpClient;
 
 <EditForm Model="taskList">
     
@@ -29,19 +29,21 @@
       <div class="d-flex justify-content-end">
         <div class="col-sm-4" style="display: flex;justify-content:end;width:50%">
             <div style="">
-               <Avatar Disabled=true/>
+               <span>
+                    <img id="avatar" class="avatar" src="Resources/Images/avatar.png"/>
+               </span>
             </div>  
         </div>
       </div>
     </div>
     <div>
         @if(stringBefore.Count()>0)
-                    {
+        {
                     <div class="" style="margin-left:4px;margin-bottom:4px; margin-top:4px">
                             <div class="row">
                                 <div class="" style="width:40px">
                                     <div class="form-check">
-                                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                      <input class="form-check-input" type="checkbox" id="flexCheckDefault">
                                     </div>
                                 </div>
                                 <div class="col" style="margin-left:0px;padding-left:3px">
@@ -99,8 +101,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    }
+                    </div>
+        }
     </div>
   </div>
 </div>
@@ -138,43 +140,46 @@
             </span>
             <span class="none-display">Estimation</span>
         </button>
-        
       </div>
     </div>
     <div class="col-sm-6">
       <div class="d-flex justify-content-end">
-        <button onclick="@CancelValue" class="cancel-button none-display">
+        <button id="cancel" onclick="@CancelValue" class="cancel-button none-display">
             <span>Cancel</span>
         </button>
-            <button id="buttonOK" onclick="@ValidateValue" class="ok-button none-display-button">
+        <button id="buttonOK" onclick="@ValidateValue" class="ok-button none-display-button">
                <span class="none-display">OK</span>
-            </button>   
-                </div>
+        </button>   
+      </div>
     </div>
   </div>
 </div>
 </EditForm>
 <br>
-<span>Type a text and press OK to see the effect:</span>
-<h5>#important notice @@john via mail@mail.com and https://www.google.com</h5>
+<label>@responseMessage</label>
 @code 
 {
     [Parameter] public Helper GetHelper { get; set; }
     [Parameter] public string InputValue { get; set; }
     public List<string> stringBefore = new List<string>();
     public TaskList taskList = new TaskList();
-    private IJSObjectReference module;
 
+    private IJSObjectReference module;
+    private string responseMessage = "";
     private void ValidateValue()
     {   
         try
         {
             GetHelper = new Helper();
             stringBefore = GetHelper.SplitString(InputValue);
+            taskList.Description = InputValue;
+            taskList.Status = true;
+            var response = httpClient.PostAsJsonAsync("https://localhost:7160/api/TaskList/create",taskList);
+            responseMessage = $"Status code: {response.Result.StatusCode.ToString()}";
         }
         catch(Exception e)
         {
-            return;
+            responseMessage = e.Message;
         }
     }
     private void CancelValue()
@@ -187,9 +192,6 @@
     async void ToggleDivVisibility()
     {
         module = await jsRuntime.InvokeAsync<IJSObjectReference>("import", "./scripts.js");
-        await module.InvokeVoidAsync("Toggle","divH");
+        await module.InvokeVoidAsync("Toggle", "divH");
     }
-
-   
-
 }

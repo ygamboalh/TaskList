@@ -9,8 +9,6 @@ namespace TaskListWebApi.Mapper
         public AutoMapperProfiles()
         {
             CreateMap<TaskCreateDto, TaskList>().ForMember(dest => dest.Id,opt => opt.Ignore());
-            CreateMap<TaskUpdateDto, TaskList>();
-            CreateMap<TaskList, TaskToListDto>();
         }
     }
 }
